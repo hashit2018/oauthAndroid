@@ -55,7 +55,7 @@ public class MainActivity extends AuthorBaseActivity {
         } else {
             state = result.getData().getState() + "";
         }
-        HttpServiceClient.getInstance().getData("1111","1111",result.getData().getCode(), result.getData().getRedirect_uri(), state, JarRandomUtil.RandomNumber()).enqueue(new Callback<AuBean>() {
+        HttpServiceClient.getInstance().getData("sampleClientId","sampleClientSecret",result.getData().getCode(), result.getData().getRedirect_uri(), state, JarRandomUtil.RandomNumber()).enqueue(new Callback<AuBean>() {
             @Override
             public void onResponse(Call<AuBean> call, Response<AuBean> response) {
                 if (response.isSuccessful()) {

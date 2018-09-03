@@ -9,6 +9,6 @@ public class MyApplication extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
-        JARAuthorization.init(this,"1111","http://your_callback_uri ",null,"d");
+        JARAuthorization.init(this,"sampleClientId","http://your_callback_uri ","1","d");
     }
 }

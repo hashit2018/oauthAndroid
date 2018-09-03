@@ -12,7 +12,7 @@ public class HttpServiceClient {
      * @return
      */
     public static InterfaceService getInstance(){
-        RetrofitUtils.setUrl_ROOT("http://192.168.254.141:1112/");
+        RetrofitUtils.setUrl_ROOT("http://13.115.238.48/");//测试环境
         interfaceService=RetrofitUtils.createApiForGson(InterfaceService.class);
         return  interfaceService;
     }
